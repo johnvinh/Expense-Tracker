@@ -18,6 +18,14 @@ function AddExpense(props: Props)
                 const description = expenseDescription?.current?.value;
                 const date = expenseDate?.current?.value;
                 const amount = expenseAmount?.current?.value;
+
+                // Don't allow blank data
+                if (description === '' || date === '' || amount === '')
+                        return;
+                // Make sure the amount is a number
+                else if (isNaN(Number(amount)))
+                        return;
+                
                 let newExpense: Expense = {
                         id: props.expenses.length,
                         description: description,
