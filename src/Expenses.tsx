@@ -28,7 +28,7 @@ function Expenses(props: Props)
                                                         {expense.date}
                                                 </td>
                                                 <td>
-                                                        {expense.amount}
+                                                        ${expense.amount}
                                                 </td>
                                         </tr>
                                 );
