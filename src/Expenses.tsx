@@ -20,7 +20,7 @@ function Expenses(props: Props)
                         {props.expenses.map((expense: Expense) =>
                         {
                                 return (
-                                        <tr>
+                                        <tr key={expense.id} >
                                                 <td>
                                                         {expense.description}
                                                 </td>
