@@ -34,6 +34,22 @@ function Expenses(props: Props)
                                 );
                         })}
                         </tbody>
+                        <tfoot>
+                        <tr>
+                                <th colSpan={2}>
+                                        Total
+                                </th>
+                                <td>
+                                        ${props.expenses.length > 0 && props.expenses.reduce((previousValue: Expense, currentValue: Expense): Expense =>
+                                        {
+                                                return {
+                                                        ...previousValue,
+                                                        amount: previousValue.amount! + currentValue.amount!
+                                                };
+                                        }).amount}
+                                </td>
+                        </tr>
+                        </tfoot>
                 </table>
         );
 }
