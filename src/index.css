@@ -50,6 +50,10 @@ input[type=button] {
     border-radius: 0.5em;
 }
 
+input[type=button]:hover {
+    background-color: #448FA3;
+}
+
 input[type=text], input[type=date] {
     color: #000;
 }
