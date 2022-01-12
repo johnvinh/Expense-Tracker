@@ -55,7 +55,7 @@ input[type=button] {
 }
 
 input[type=button]:hover {
-    background-color: #448FA3;
+    background-color: #EA8693;
 }
 
 input[type=text], input[type=date] {
