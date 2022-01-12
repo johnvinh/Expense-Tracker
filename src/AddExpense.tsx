@@ -33,6 +33,10 @@ function AddExpense(props: Props)
                         amount: Number(amount)
                 };
                 props.setExpenses([...props.expenses, newExpense]);
+
+                expenseDescriptionRef.current!.value = '';
+                expenseDateRef.current!.value = '';
+                expenseAmountRef.current!.value = '';
         }
 
         return (
