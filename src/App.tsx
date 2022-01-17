@@ -10,7 +10,7 @@ function App()
         // Load in existing expenses from localstorage
         useEffect(() =>
         {
-                setExpenses(JSON.parse(localStorage.getItem('expenses') as string));
+                setExpenses(JSON.parse(localStorage.getItem('expenses') as string) ?? []);
         }, []);
 
         // Update localstorage whenever a new expense is added
