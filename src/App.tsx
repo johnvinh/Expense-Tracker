@@ -1,6 +1,7 @@
 import Header from './Header';
 import AddExpense from './AddExpense';
 import Expenses from './Expenses';
+import ClearExpenses from './ClearExpenses';
 import {useState, useEffect} from 'react';
 
 function App()
@@ -23,6 +24,7 @@ function App()
                 <>
                         <Header/>
                         <AddExpense expenses={expenses} setExpenses={setExpenses} />
+                        <ClearExpenses expenses={expenses} setExpenses={setExpenses} />
                         <Expenses expenses={expenses} />
                 </>
         );
